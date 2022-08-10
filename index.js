@@ -14,6 +14,7 @@ for(let i = 0; i< banWords.length;i++){
         return true;
    
     }
+    
 }
     }
     bot.on("message", async msg =>{
