@@ -6,7 +6,7 @@ const bot = new TelegramApi(token, {polling:true})
 
 
 const start = () => {
-    let banWords = ['путин топ', "россия великая", "россия", "слава россии", "безмамный", "блять", "артем лох", "хз"]
+    let banWords = ['путин топ', "россия великая", "россия", "слава россии", "безмамный", "блять", "артем лох", "хз","артем пиздун","артем сука","артем уебан","артем скотина","артем чмо"]
     function forbiden(b){
 for(let i = 0; i< banWords.length;i++){
     let a = b.toLowerCase()
