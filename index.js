@@ -12,6 +12,7 @@ for(let i = 0; i< banWords.length;i++){
     let a = b.toLowerCase()
     if(a.indexOf(banWords[i]) !== -1){
         return true;
+   
     }
 }
     }
