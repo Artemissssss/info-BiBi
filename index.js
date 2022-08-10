@@ -23,10 +23,7 @@ for(let i = 0; i< banWords.length;i++){
         // console.log(msg)
         if(msg.new_chat_participant !== undefined){
         if(msg.new_chat_participant !== undefined && msg.new_chat_participant.is_bot !== true){
-bot.sendMessage(chatId,`Привіт, звертайтесь до мене Інфо(Інфо вокзал, Інфо магазини і тд)! ${'@'+msg.new_chat_participant.username}, це група де ми ділимося досвідом біжеців в місті Бітігайм-Бісінген(район Людвігсбург).\nКорисну інформацію ви можете знайти на:\nhttps://uahelp.wiki/stuttgart\nhttps://t.me/+839gnK1hQPE5Zjgy\nКорисні адреси:\nAuf dem Wasen 9 (соціолат)\nFreibergerstraße 51 (Jobcenter)\nStuttgarterstraße 53/55 (Familienkasse)\nLöchgauerstraße 22 (міграційна служба)\nSchwätzgässle 3 (Можна отримати подарункові сертифікати Kaufland на 20 євро, шкільний рюкзак та бланк для оформлення картки тафеля(окремо і для харчового, і для тафелю одежі))\nJahnstraße 91 (Харчовий тафель)\nЩе декілька порад:\n1)Завантажити додаток DB Navigator(для потягів) та Google Maps(для автобусів)\n2)Пароль від двері 1908`)             
-setTimeout(() => {
-    bot.deleteMessage(chatId,msg.message_id+1)
-}, 150000);        
+bot.sendMessage(chatId,`Привіт, звертайтесь до мене Інфо(Інфо вокзал, Інфо магазини і тд)! ${'@'+msg.new_chat_participant.username}, це група де ми ділимося досвідом біжеців в місті Бітігайм-Бісінген(район Людвігсбург).\nКорисну інформацію ви можете знайти на:\nhttps://uahelp.wiki/stuttgart\nhttps://t.me/+839gnK1hQPE5Zjgy\nКорисні адреси:\nAuf dem Wasen 9 (соціолат)\nFreibergerstraße 51 (Jobcenter)\nStuttgarterstraße 53/55 (Familienkasse)\nLöchgauerstraße 22 (міграційна служба)\nSchwätzgässle 3 (Можна отримати подарункові сертифікати Kaufland на 20 євро, шкільний рюкзак та бланк для оформлення картки тафеля(окремо і для харчового, і для тафелю одежі))\nJahnstraße 91 (Харчовий тафель)\nЩе декілька порад:\n1)Завантажити додаток DB Navigator(для потягів) та Google Maps(для автобусів)\n2)Пароль від двері 1908`)                   
 }else if(msg.new_chat_participant.is_bot == true){
             bot.banChatMember(chatId, msg.new_chat_participant.id)
             bot.banChatMember(chatId, msg.from.id)
