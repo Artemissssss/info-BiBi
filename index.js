@@ -5,7 +5,6 @@ const token = "5251851978:AAE8CDP2qLYm-uXM2i54znm31p-JFKPvA2w"
 const bot = new TelegramApi(token, {polling:true})
 
 
-
 const start = () => {
     let banWords = ['путин топ', "россия великая", "россия", "слава россии", "безмамный", "блять", "артем лох", "хз","артем пиздун","артем сука","артем уебан","артем скотина","артем чмо"]
     function forbiden(b){
