@@ -16,7 +16,8 @@ const start = () => {
             if (a.indexOf(banWords[i]) !== -1) {
                 return true;
             }
-            
+         
+    
         }
     }
     bot.on("message", async msg => {
